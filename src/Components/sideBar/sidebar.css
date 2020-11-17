@@ -1,0 +1,165 @@
+.sideBar {
+  height: 3rem;
+  background-color: #222222;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-menu {
+  /* logo menu only in mobile devices */
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.active {
+  color: #3098c5;
+  -webkit-text-fill-color: #3098c5;
+}
+
+.home-icon {
+  /* color: var(--color); */
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.home-icon span {
+  display: none;
+}
+
+.home_ {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.filler {
+  display: none;
+}
+
+.navigation-list {
+  top: 3rem;
+  background-color: #222222;
+  display: flex;
+
+  position: absolute;
+  right: -100%;
+  min-height: calc(100vh - 3rem);
+  padding: 0 2rem 1rem 2rem;
+
+  -webkit-transition: right 275ms; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: right 275ms; /* Firefox 4-15 */
+  -o-transition: right 275ms; /* Opera 10.50–12.00 */
+  transition: right 275ms;
+}
+
+.navigation-list-active {
+  right: 0;
+}
+
+.category-name {
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+}
+
+.sideBar ul {
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 0;
+}
+
+.sideBar li {
+  margin-top: 1.5rem;
+  margin-left: 0;
+}
+
+.navigation-list > ul > li:last-child {
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 850px) {
+  .navigation-list {
+    display: block;
+    position: unset;
+    transition: unset;
+    min-height: unset;
+    background-color: unset;
+    padding: 0;
+  }
+
+  .sideBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24vw;
+    padding: 0;
+    max-width: 24vw;
+    min-width: 18rem;
+    height: 100vh;
+    background-image: url(../../Pictures/blacksidebar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 0 10px #222;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    transition: all 275ms ease;
+    position: fixed;
+  }
+
+  .filler {
+    display: block;
+    width: 24vw;
+    max-width: 24vw;
+    min-width: 18rem;
+    height: 100vh;
+  }
+
+  .sidebar-menu {
+    display: none;
+  }
+
+  a {
+    color: var(--color);
+    transition: all 275ms ease;
+  }
+
+  .sideBar ul {
+    text-align: unset;
+    margin-left: 1rem;
+  }
+
+  .sideBar li {
+    margin-left: 1rem;
+  }
+
+  .my-artistic-side {
+    background-color: #a2d7d9;
+    background-image: url(../../Pictures/brightsidebar.png);
+    box-shadow: 5px 0 10px #a2d7d9;
+  }
+
+  .home-icon {
+    color: var(--color);
+    width: 6rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    transition: all 275ms ease;
+  }
+
+  .home-icon:hover {
+    color: #3098c5;
+  }
+
+  .home-icon span {
+    display: inline;
+    margin-left: 0.4rem;
+    font-size: 1.2rem;
+  }
+}

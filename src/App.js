@@ -1,26 +1,54 @@
-import logo from './logo.svg';
+
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          Czesc
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {Route, BrowserRouter as Router, Switch, Redirect, HashRouter} from 'react-router-dom';
+import Skills from './Components/skills';
+import Home from './Components/home/home';
 
+
+
+
+class App extends Component {
+  state = { 
+    showHome: true
+   }
+
+   
+   
+
+   onSkillsButtonClick = () => {
+    // localStorage.setItem('home', false);
+     this.setState({showHome: false}); 
+   }
+
+  //  componentDidMount(){
+  //   //  const _home = localStorage.getItem('home') === 'false';
+  //   //  if(!_home){
+  //   //  console.log("ww: " + _home);
+  //   //  this.setState({showHome: _home});
+  //   }
+  //  }
+
+  //{this.state.showHome ? <Home onSkillsClick={this.onSkillsButtonClick}/> : null}   
+  render() { 
+
+  
+    return ( 
+      <div> 
+           
+        <HashRouter basename='/'>
+          <Switch>
+            <Route path={"/"} exact component={Home}/>
+            <Route path={"/skills"} component={Skills}/>
+          </Switch>
+        </HashRouter>
+      </div>
+      );
+  }
+}
+ 
 export default App;
+
+ 
+
