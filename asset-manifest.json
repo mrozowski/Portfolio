@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1e4afb44.chunk.css",
-    "main.js": "/Portfolio/static/js/main.01111ce6.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.01111ce6.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.c888f70b.chunk.css",
+    "main.js": "/Portfolio/static/js/main.f7d1b4fa.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.f7d1b4fa.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.0c76caa0.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.0c76caa0.js.map",
     "static/js/2.dbb6d882.chunk.js": "/Portfolio/static/js/2.dbb6d882.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.d5bd9d3c.chunk.js": "/Portfolio/static/js/3.d5bd9d3c.chunk.js",
     "static/js/3.d5bd9d3c.chunk.js.map": "/Portfolio/static/js/3.d5bd9d3c.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.1e4afb44.chunk.css.map": "/Portfolio/static/css/main.1e4afb44.chunk.css.map",
+    "static/css/main.c888f70b.chunk.css.map": "/Portfolio/static/css/main.c888f70b.chunk.css.map",
     "static/js/2.dbb6d882.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.dbb6d882.chunk.js.LICENSE.txt",
     "static/media/Ursula.3ce43fed.png": "/Portfolio/static/media/Ursula.3ce43fed.png",
     "static/media/androProject.5fef2af0.png": "/Portfolio/static/media/androProject.5fef2af0.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.0c76caa0.js",
     "static/js/2.dbb6d882.chunk.js",
-    "static/css/main.1e4afb44.chunk.css",
-    "static/js/main.01111ce6.chunk.js"
+    "static/css/main.c888f70b.chunk.css",
+    "static/js/main.f7d1b4fa.chunk.js"
   ]
 }
